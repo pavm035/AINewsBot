@@ -36,7 +36,7 @@ A sophisticated AI-powered chatbot application with integrated AI news summariza
 
 1. **Clone the repository:**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/pavm035/AINewsBot.git
 cd BasicChatBot_AINews
 ```
 
