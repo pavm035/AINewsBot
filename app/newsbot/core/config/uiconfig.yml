@@ -9,10 +9,6 @@ llm_config:
         - "llama3-70b-8192"
         - "gemma2-9b-it"
         
-    Rakuten:
-      api_url: "https://api.ai.public.rakuten-it.com/openai/v1"
-      models:
-        - "gpt-5"        
     OpenAI:
       models:
         - "gpt-5"

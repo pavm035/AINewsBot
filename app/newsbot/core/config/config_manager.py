@@ -8,16 +8,12 @@ import threading
 # 🧠 LLM Providers
 class LLMProvider(str, Enum):
     GROQ = "Groq"
-    RAKUTEN = "Rakuten"
     OPENAI = "OpenAI"
     ANTHROPIC = "Anthropic"
 
     @property
     def normalized(self) -> str:
         """Return the standardized provider name."""
-        match self:
-            case LLMProvider.RAKUTEN:
-                return "openai"
         return self.value.lower()
 
 
