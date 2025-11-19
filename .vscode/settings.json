@@ -1,0 +1,8 @@
+{
+    "python.defaultInterpreterPath": "/opt/miniconda3/envs/LangGraphBasicChatBot/bin/python",
+    "python.terminal.activateEnvironment": false,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    }
+}

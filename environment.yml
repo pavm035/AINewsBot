@@ -1,0 +1,21 @@
+name: LangGraphBasicChatBot #The name of your environment. 
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12  
+  - pandas
+  - langchain
+  - langchain-community
+  - langchain-groq
+  - langchain-openai
+  - langchain-tavily
+  - langchain-chroma
+  - langgraph
+  - streamlit
+  - graphviz
+  - pygraphviz
+  - ipython
+  - pip
+  - pip:
+      - langgraph-checkpoint-sqlite
