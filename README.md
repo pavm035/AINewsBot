@@ -1,6 +1,10 @@
-# 🤖 BasicChatBot_AINews
+# 🤖 AINewsBot
 
 A sophisticated AI-powered chatbot application with integrated AI news summarization capabilities, built using modern Python frameworks including LangChain, LangGraph, and Streamlit.
+
+[![GitHub](https://img.shields.io/github/license/pavm035/AINewsBot)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red.svg)](https://streamlit.io)
 
 ## ✨ Features
 
@@ -46,8 +50,25 @@ conda env create -f environment.yml
 conda activate LangGraphBasicChatBot
 ```
 
+   ⚠️ **Important**: Make sure to activate the environment before running the app!
+
+**Alternative: Using pip:**
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
 3. **Set up environment variables:**
-Create a `.env` file in the root directory:
+Copy the example environment file and add your API keys:
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` with your actual API keys:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
@@ -62,6 +83,36 @@ streamlit run app/main.py
 
 5. **Access the application:**
 Open your browser to `http://localhost:8501`
+
+### 🔧 Verify Installation
+
+To verify your installation works correctly:
+
+```bash
+# Test by running the Streamlit app
+streamlit run app/main.py
+
+# The app should start without import errors
+# You'll see: "You can now view your Streamlit app in your browser."
+```
+
+If you see the Streamlit interface load without errors, your installation is successful!
+
+### 🔑 Required API Keys
+
+Before using the application, you'll need:
+
+1. **GROQ API Key** (Primary LLM provider)
+   - Sign up at [GROQ Console](https://console.groq.com/)
+   - Free tier available
+
+2. **Tavily API Key** (For news search and web search)
+   - Sign up at [Tavily](https://tavily.com/)
+   - Free tier available
+
+3. **OpenAI API Key** (Optional alternative LLM provider)
+   - Sign up at [OpenAI Platform](https://platform.openai.com/)
+   - Requires paid plan for API access
 
 ## 📖 Usage
 
@@ -226,11 +277,15 @@ CMD ["streamlit", "run", "app/main.py"]
 
 ## 🤝 Contributing
 
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
 3. Commit your changes: `git commit -m 'Add amazing feature'`
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and development process.
 
 ## 📝 License
 
@@ -247,10 +302,45 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you encounter any issues or have questions:
-1. Check the [Issues](../../issues) section
+1. Check the [Issues](https://github.com/pavm035/AINewsBot/issues) section
 2. Review the configuration in `uiconfig.yml`
 3. Verify API keys are properly set in `.env`
 4. Check logs for detailed error information
+
+For more detailed setup help, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+1. **Import Errors**
+   ```bash
+   # Make sure you're in the project directory
+   cd AINewsBot
+   
+   # Ensure Python can find the app module
+   export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+   ```
+
+2. **Missing API Keys**
+   - Verify your `.env` file exists and contains valid API keys
+   - Check that there are no extra spaces around the `=` signs
+   - Ensure API keys are active and have proper permissions
+
+3. **Streamlit Port Issues**
+   ```bash
+   # If port 8501 is busy, specify a different port
+   streamlit run app/main.py --server.port 8502
+   ```
+
+4. **Conda Environment Issues**
+   ```bash
+   # If environment creation fails, update conda first
+   conda update conda
+   
+   # Or use pip installation as alternative
+   pip install -r requirements.txt
+   ```
 
 ## 🔮 Future Enhancements
 
