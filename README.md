@@ -6,6 +6,28 @@ A sophisticated AI-powered chatbot application with integrated AI news summariza
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red.svg)](https://streamlit.io)
 
+## 📋 Table of Contents
+- [🌟 Preview](#-preview)
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [📖 Usage](#-usage)
+- [🏗️ Architecture](#️-architecture)
+- [🔧 Configuration](#-configuration)
+- [📁 Project Structure](#-project-structure)
+- [📞 Support](#-support)
+
+## 🌟 Preview
+
+<div align="center">
+
+### Interactive Chat Interface
+![Chat Interface](snapshots/Preview1.png)
+
+### AI News Summarization Dashboard
+![AI News Interface](snapshots/Preview2.png)
+
+</div>
+
 ## ✨ Features
 
 ### 🗣️ **Interactive Chatbot**
@@ -25,6 +47,14 @@ A sophisticated AI-powered chatbot application with integrated AI news summariza
 - **LangChain**: Modern LLM integration and tool binding
 - **Pydantic**: Type-safe data validation and configuration
 - **Streamlit**: Clean, interactive web interface
+
+## 📸 Application Screenshots
+
+### Chat Interface
+![Chat Interface](snapshots/Preview1.png)
+
+### AI News Summarization
+![AI News Interface](snapshots/Preview2.png)
 
 ## 🚀 Quick Start
 
