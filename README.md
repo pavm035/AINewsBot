@@ -37,7 +37,7 @@ A sophisticated AI-powered chatbot application with integrated AI news summariza
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/pavm035/AINewsBot.git
-cd BasicChatBot_AINews
+cd AINewsBot
 ```
 
 2. **Create and activate conda environment:**
